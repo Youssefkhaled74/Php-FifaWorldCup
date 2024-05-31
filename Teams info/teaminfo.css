@@ -1,0 +1,14 @@
+body {
+    background-image: url('TOTS.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* Optionally, you can add more styles */
+    /* For example: */
+    /* background-position: center center; */
+    /* background-attachment: fixed; */
+    /* background-color: #f0f0f0; */
+    /* color: #333; */
+    /* font-family: Arial, sans-serif; */
+    /* Adjust these styles according to your needs */
+}

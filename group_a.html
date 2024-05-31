@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group A Matches - World Cup Fantasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Group A Matches</h2>
+    <ul>
+      <li>Qatar vs. Ecuador</li>
+      <li>Senegal vs. Netherlands</li>
+      <li>Qatar vs. Senegal</li>
+      <li>Ecuador vs. Netherlands</li>
+      <li>Senegal vs. Ecuador</li>
+      <li>Netherlands vs. Qatar</li>
+    </ul>
+    <p>Predict the scores for the matches above:</p>
+    <form action="submit_prediction.php" method="post">
+      <div class="match">
+        <p>Qatar vs. Ecuador</p>
+        <input type="number" name="qatar_ecuador_score" placeholder="Qatar Score">
+        <span>-</span>
+        <input type="number" name="ecuador_qatar_score" placeholder="Ecuador Score">
+      </div>
+      <div class="match">
+        <p>Senegal vs. Netherlands</p>
+        <input type="number" name="senegal_netherlands_score" placeholder="Senegal Score">
+        <span>-</span>
+        <input type="number" name="netherlands_senegal_score" placeholder="Netherlands Score">
+      </div>
+      <div class="match">
+        <p>Qatar vs. Senegal</p>
+        <input type="number" name="qatar_senegal_score" placeholder="Qatar Score">
+        <span>-</span>
+        <input type="number" name="senegal_qatar_score" placeholder="Senegal Score">
+      </div>
+      <div class="match">
+        <p>Ecuador vs. Netherlands</p>
+        <input type="number" name="ecuador_netherlands_score" placeholder="Ecuador Score">
+        <span>-</span>
+        <input type="number" name="netherlands_ecuador_score" placeholder="Netherlands Score">
+      </div>
+      <div class="match">
+        <p>Senegal vs. Ecuador</p>
+        <input type="number" name="senegal_ecuador_score" placeholder="Senegal Score">
+        <span>-</span>
+        <input type="number" name="ecuador_senegal_score" placeholder="Ecuador Score">
+      </div>
+      <div class="match">
+        <p>Netherlands vs. Qatar</p>
+        <input type="number" name="netherlands_qatar_score" placeholder="Netherlands Score">
+        <span>-</span>
+        <input type="number" name="qatar_netherlands_score" placeholder="Qatar Score">
+      </div>
+      <button type="submit">Submit Prediction</button>
+    </form>
+  </div>
+</body>
+</html>

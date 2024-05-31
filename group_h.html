@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group H Matches - World Cup Fantasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Group H Matches</h2>
+    <ul>
+      <li>Uruguay vs. South Korea</li>
+      <li>Portugal vs. Ghana</li>
+      <li>South Korea vs. Ghana</li>
+      <li>Uruguay vs. Portugal</li>
+      <li>Ghana vs. Uruguay</li>
+      <li>Portugal vs. South Korea</li>
+    </ul>
+    <p>Predict the scores for the matches above:</p>
+    <form action="submit_prediction.php" method="post">
+      <div class="match">
+        <p>Uruguay vs. South Korea</p>
+        <input type="number" name="uruguay_southkorea_score" placeholder="Uruguay Score">
+        <span>-</span>
+        <input type="number" name="southkorea_uruguay_score" placeholder="South Korea Score">
+      </div>
+      <div class="match">
+        <p>Portugal vs. Ghana</p>
+        <input type="number" name="portugal_ghana_score" placeholder="Portugal Score">
+        <span>-</span>
+        <input type="number" name="ghana_portugal_score" placeholder="Ghana Score">
+      </div>
+      <div class="match">
+        <p>South Korea vs. Ghana</p>
+        <input type="number" name="southkorea_ghana_score" placeholder="South Korea Score">
+        <span>-</span>
+        <input type="number" name="ghana_southkorea_score" placeholder="Ghana Score">
+      </div>
+      <div class="match">
+        <p>Uruguay vs. Portugal</p>
+        <input type="number" name="uruguay_portugal_score" placeholder="Uruguay Score">
+        <span>-</span>
+        <input type="number" name="portugal_uruguay_score" placeholder="Portugal Score">
+      </div>
+      <div class="match">
+        <p>Ghana vs. Uruguay</p>
+        <input type="number" name="ghana_uruguay_score" placeholder="Ghana Score">
+        <span>-</span>
+        <input type="number" name="uruguay_ghana_score" placeholder="Uruguay Score">
+      </div>
+      <div class="match">
+        <p>Portugal vs. South Korea</p>
+        <input type="number" name="portugal_southkorea_score" placeholder="Portugal Score">
+        <span>-</span>
+        <input type="number" name="southkorea_portugal_score" placeholder="South Korea Score">
+      </div>
+      <button type="submit">Submit Prediction</button>
+    </form>
+  </div>
+</body>
+</html>

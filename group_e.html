@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group E Matches - World Cup Fantasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Group E Matches</h2>
+    <ul>
+      <li>Germany vs. Japan</li>
+      <li>Spain vs. Costa Rica</li>
+      <li>Japan vs. Costa Rica</li>
+      <li>Germany vs. Spain</li>
+      <li>Costa Rica vs. Germany</li>
+      <li>Japan vs. Spain</li>
+    </ul>
+    <p>Predict the scores for the matches above:</p>
+    <form action="submit_prediction.php" method="post">
+      <div class="match">
+        <p>Germany vs. Japan</p>
+        <input type="number" name="germany_japan_score" placeholder="Germany Score">
+        <span>-</span>
+        <input type="number" name="japan_germany_score" placeholder="Japan Score">
+      </div>
+      <div class="match">
+        <p>Spain vs. Costa Rica</p>
+        <input type="number" name="spain_costa_rica_score" placeholder="Spain Score">
+        <span>-</span>
+        <input type="number" name="costa_rica_spain_score" placeholder="Costa Rica Score">
+      </div>
+      <div class="match">
+        <p>Japan vs. Costa Rica</p>
+        <input type="number" name="japan_costa_rica_score" placeholder="Japan Score">
+        <span>-</span>
+        <input type="number" name="costa_rica_japan_score" placeholder="Costa Rica Score">
+      </div>
+      <div class="match">
+        <p>Germany vs. Spain</p>
+        <input type="number" name="germany_spain_score" placeholder="Germany Score">
+        <span>-</span>
+        <input type="number" name="spain_germany_score" placeholder="Spain Score">
+      </div>
+      <div class="match">
+        <p>Costa Rica vs. Germany</p>
+        <input type="number" name="costa_rica_germany_score" placeholder="Costa Rica Score">
+        <span>-</span>
+        <input type="number" name="germany_costa_rica_score" placeholder="Germany Score">
+      </div>
+      <div class="match">
+        <p>Japan vs. Spain</p>
+        <input type="number" name="japan_spain_score" placeholder="Japan Score">
+        <span>-</span>
+        <input type="number" name="spain_japan_score" placeholder="Spain Score">
+      </div>
+      <button type="submit">Submit Prediction</button>
+    </form>
+  </div>
+</body>
+</html>

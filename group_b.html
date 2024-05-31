@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group B Matches - World Cup Fantasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Group B Matches</h2>
+    <ul>
+      <li>England vs. Iran</li>
+      <li>United States vs. Wales</li>
+      <li>Wales vs. Iran</li>
+      <li>England vs. United States</li>
+      <li>Wales vs. England</li>
+      <li>Iran vs. United States</li>
+    </ul>
+    <p>Predict the scores for the matches above:</p>
+    <form action="submit_prediction.php" method="post">
+      <div class="match">
+        <p>England vs. Iran</p>
+        <input type="number" name="england_iran_score" placeholder="England Score">
+        <span>-</span>
+        <input type="number" name="iran_england_score" placeholder="Iran Score">
+      </div>
+      <div class="match">
+        <p>United States vs. Wales</p>
+        <input type="number" name="usa_wales_score" placeholder="USA Score">
+        <span>-</span>
+        <input type="number" name="wales_usa_score" placeholder="Wales Score">
+      </div>
+      <div class="match">
+        <p>Wales vs. Iran</p>
+        <input type="number" name="wales_iran_score" placeholder="Wales Score">
+        <span>-</span>
+        <input type="number" name="iran_wales_score" placeholder="Iran Score">
+      </div>
+      <div class="match">
+        <p>England vs. United States</p>
+        <input type="number" name="england_usa_score" placeholder="England Score">
+        <span>-</span>
+        <input type="number" name="usa_england_score" placeholder="USA Score">
+      </div>
+      <div class="match">
+        <p>Wales vs. England</p>
+        <input type="number" name="wales_england_score" placeholder="Wales Score">
+        <span>-</span>
+        <input type="number" name="england_wales_score" placeholder="England Score">
+      </div>
+      <div class="match">
+        <p>Iran vs. United States</p>
+        <input type="number" name="iran_usa_score" placeholder="Iran Score">
+        <span>-</span>
+        <input type="number" name="usa_iran_score" placeholder="USA Score">
+      </div>
+      <button type="submit">Submit Prediction</button>
+    </form>
+  </div>
+</body>
+</html>

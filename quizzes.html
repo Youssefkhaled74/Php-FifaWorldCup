@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup Quizzes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .quiz p,
+    .quiz label {
+      font-size: 35px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Quizzes</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>World Cup Quizzes</h2>
+    <p>Test your knowledge about the FIFA World Cup history!</p>
+    <div class="quiz">
+      <h3>Quiz 1: World Cup Trivia</h3>
+      <p>Question 1: When was the first FIFA World Cup held?</p>
+      <form id="question1">
+        <label><input type="radio" name="q1" value="1930"> 1930</label><br>
+        <label><input type="radio" name="q1" value="1926"> 1926</label><br>
+        <label><input type="radio" name="q1" value="1934"> 1934</label><br>
+        <label><input type="radio" name="q1" value="1924"> 1924</label><br>
+        <button type="button" onclick="checkAnswer('question1', '1930')">Check Answer</button>
+        <p id="result1"></p>
+      </form>
+      
+      <p>Question 2: Which country hosted the 2014 FIFA World Cup?</p>
+      <form id="question2">
+        <label><input type="radio" name="q2" value="Germany"> Germany</label><br>
+        <label><input type="radio" name="q2" value="Brazil"> Brazil</label><br>
+        <label><input type="radio" name="q2" value="South Africa"> South Africa</label><br>
+        <label><input type="radio" name="q2" value="Russia"> Russia</label><br>
+        <button type="button" onclick="checkAnswer('question2', 'Brazil')">Check Answer</button>
+        <p id="result2"></p>
+      </form>
+
+      <p>Question 3: Who is the all-time top goal scorer in FIFA World Cup history?</p>
+      <form id="question3">
+        <label><input type="radio" name="q3" value="Lionel Messi"> Lionel Messi</label><br>
+        <label><input type="radio" name="q3" value="Cristiano Ronaldo"> Cristiano Ronaldo</label><br>
+        <label><input type="radio" name="q3" value="Pele"> Pele</label><br>
+        <label><input type="radio" name="q3" value="Miroslav Klose"> Miroslav Klose</label><br>
+        <button type="button" onclick="checkAnswer('question3', 'Miroslav Klose')">Check Answer</button>
+        <p id="result3"></p>
+      </form>
+      
+      <p>Question 4: Which country won the first FIFA World Cup?</p>
+      <form id="question4">
+        <label><input type="radio" name="q4" value="Brazil"> Brazil</label><br>
+        <label><input type="radio" name="q4" value="Uruguay"> Uruguay</label><br>
+        <label><input type="radio" name="q4" value="Italy"> Italy</label><br>
+        <label><input type="radio" name="q4" value="Germany"> Germany</label><br>
+        <button type="button" onclick="checkAnswer('question4', 'Uruguay')">Check Answer</button>
+        <p id="result4"></p>
+      </form>
+
+      <p>Question 5: Who won the FIFA World Cup in 2018?</p>
+      <form id="question5">
+        <label><input type="radio" name="q5" value="France"> France</label><br>
+        <label><input type="radio" name="q5" value="Croatia"> Croatia</label><br>
+        <label><input type="radio" name="q5" value="Brazil"> Brazil</label><br>
+        <label><input type="radio" name="q5" value="Germany"> Germany</label><br>
+        <button type="button" onclick="checkAnswer('question5', 'France')">Check Answer</button>
+        <p id="result5"></p>
+      </form>
+
+      <p>Question 6: Who scored the most goals in a single FIFA World Cup tournament?</p>
+      <form id="question6">
+        <label><input type="radio" name="q6" value="Pele"> Pele</label><br>
+        <label><input type="radio" name="q6" value="Just Fontaine"> Just Fontaine</label><br>
+        <label><input type="radio" name="q6" value="Gerd Muller"> Gerd Muller</label><br>
+        <label><input type="radio" name="q6" value="Thomas Muller"> Thomas Muller</label><br>
+        <button type="button" onclick="checkAnswer('question6', 'Just Fontaine')">Check Answer</button>
+        <p id="result6"></p>
+      </form>
+
+      <p>Question 7: Who won the FIFA World Cup in 1966?</p>
+      <form id="question7">
+        <label><input type="radio" name="q7" value="Brazil"> Brazil</label><br>
+        <label><input type="radio" name="q7" value="England"> England</label><br>
+        <label><input type="radio" name="q7" value="Italy"> Italy</label><br>
+        <label><input type="radio" name="q7" value="Germany"> Germany</label><br>
+        <button type="button" onclick="checkAnswer('question7', 'England')">Check Answer</button>
+        <p id="result7"></p>
+      </form>
+
+      <p>Question 8: Who scored the fastest goal in FIFA World Cup history?</p>
+      <form id="question8">
+        <label><input type="radio" name="q8" value="Hakan Şükür"> Hakan Şükür</label><br>
+        <label><input type="radio" name="q8" value="Clint Dempsey"> Clint Dempsey</label><br>
+        <label><input type="radio" name="q8" value="Christian Benteke"> Christian Benteke</label><br>
+        <label><input type="radio" name="q8" value="Dimitri Kirichenko"> Dimitri Kirichenko</label><br>
+        <button type="button" onclick="checkAnswer('question8', 'Hakan Şükür')">Check Answer</button>
+        <p id="result8"></p>
+      </form>
+
+      <p>Question 9: Which player has won the most FIFA World Cup titles?</p>
+      <form id="question9">
+        <label><input type="radio" name="q9" value="Pele"> Pele</label><br>
+        <label><input type="radio" name="q9" value="Diego Maradona"> Diego Maradona</label><br>
+        <label><input type="radio" name="q9" value="Lothar Matthäus"> Lothar Matthäus</label><br>
+        <label><input type="radio" name="q9" value="Mário Zagallo"> Mário Zagallo</label><br>
+        <button type="button" onclick="checkAnswer('question9', 'Mário Zagallo')">Check Answer</button>
+        <p id="result9"></p>
+      </form>
+
+      <p>Question 10: Who is the youngest player to score a goal in FIFA World Cup history?</p>
+      <form id="question10">
+        <label><input type="radio" name="q10" value="Michael Owen"> Michael Owen</label><br>
+        <label><input type="radio" name="q10" value="Pelé"> Pelé</label><br>
+        <label><input type="radio" name="q10" value="Kylian Mbappé"> Kylian Mbappé</label><br>
+        <label><input type="radio" name="q10" value="Fernando Torres"> Fernando Torres</label><br>
+        <button type="button" onclick="checkAnswer('question10', 'Pelé')">Check Answer</button>
+        <p id="result10"></p>
+      </form>
+
+      <!-- Add more questions and options as needed -->
+    </div>
+  </div>
+
+  <script>
+    function checkAnswer(formId, correctAnswer) {
+      var form = document.getElementById(formId);
+      var selectedAnswer = "";
+      var radios = form.elements["q" + formId.slice(-1)];
+      for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+          selectedAnswer = radios[i].value;
+          break;
+        }
+      }
+      var resultElement = document.getElementById(formId.replace('question', 'result'));
+      if (selectedAnswer === correctAnswer) {
+        resultElement.textContent = "Correct!";
+      } else {
+        resultElement.textContent = "Incorrect!";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Fantasy - Group Stages</title>
+    <link rel="stylesheet" href="gs.css">
+    <style>
+        .group-table {
+            width: 100%;
+            border-collapse: separate;
+            margin-top: 30px;
+            margin-bottom: 1px; /* Add margin between groups */
+            border: 2px solid black; /* Add bold border */
+            border-radius: 10px; /* Make edges curved with a radius of 10px */
+        }
+        .group-table th, .group-table td {
+            padding: 8px;
+            text-align: left; padding-left: 30px;
+        }
+        .group-table th {
+            background-color: #f2f2f2;
+        }
+        .flag {
+            width: 20px; /* Adjust the size of the flag images */
+            height: 20px;
+            margin-right: 5px;
+        }
+        .group-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1px;
+        }
+        .group-column {
+            flex: 1;
+            margin-right: 10px;
+        }
+        /* Style for clickable buttons */
+        .country-button {
+            display: inline-block;
+            padding: 10px; /* Adjusted padding */
+            background-color: #ffffffcc;
+            color: #840622cc;
+            text-decoration: none;
+            border-radius: 100px;
+            margin-bottom: 5px;
+        }
+        .country-button:hover {
+            background-color: rgb(86, 4, 44);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>World Cup Fantasy</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fix.html">Fixtures</a></li>
+                <li><a href="gs.html" class="active">Group Stages</a></li>
+                <li><a href="simulator.html">Simulator</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container" id="group-stages">
+        <main class="main-content">
+            <!-- First row of groups -->
+            <div class="group-row">
+                <div class="group-column">
+                    <!-- Table for Group A -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group A</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="Teams info/qatar.html" class="country-button"><img class="flag" src="qatar.jpeg" alt="Qatar Flag"> <b>Qatar</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Teams info/ecuador.html" class="country-button"><img class="flag" src="ecuador.jpeg" alt="Ecuador Flag"> <b>Ecuador</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Teams info/senegal.html" class="country-button"><img class="flag" src="senegal.jpeg" alt="Senegal Flag"> <b>Senegal</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Teams info/netherlands.html" class="country-button"><img class="flag" src="netherlands.jpeg" alt="Netherlands Flag"> <b>Netherlands</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="group-column">
+                    <!-- Table for Group B -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="Teams info/england.html" class="country-button"><img class="flag" src="england.jpeg" alt="England Flag"> <b>England</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Teams info/iran.html" class="country-button"><img class="flag" src="IR Iran.jpeg" alt="IR Iran Flag"> <b>IR Iran</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Teams info/usa.html" class="country-button"><img class="flag" src="usa.jpeg" alt="USA Flag"> <b>USA</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Teams info/wales.html" class="country-button"><img class="flag" src="wales.jpeg" alt="Wales Flag"> <b>Wales</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="group-column">
+                    <!-- Table for Group C -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="argentina.jpeg" alt="Argentina Flag"> <b>Argentina</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="saudi arabia.jpeg" alt="Saudi Arabia Flag"> <b>Saudi Arabia</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="mexico.jpeg" alt="Mexico Flag"> <b>Mexico</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="poland.jpeg" alt="Poland Flag"> <b>Poland</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="group-column">
+                    <!-- Table for Group D -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group D</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="france.jpeg" alt="France Flag"> <b>France</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="australia.jpeg" alt="Australia Flag"> <b>Australia</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="denmark.jpeg" alt="Denmark Flag"> <b>Denmark</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="tunisia.jpeg" alt="Tunisia Flag"> <b>Tunisia</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Second row of groups -->
+            <div class="group-row">
+                <div class="group-column">
+                    <!-- Table for Group E -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group E</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="spain.jpeg" alt="Spain Flag"> <b>Spain</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="costa rica.jpeg" alt="Costa Rica Flag"> <b>Costa Rica</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="germany.jpeg" alt="Germany Flag"> <b>Germany</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="japan.jpeg" alt="Japan Flag"> <b>Japan</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="group-column">
+                    <!-- Table for Group F -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group F</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="belgium.jpeg" alt="Belgium Flag"> <b>Belgium</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="canada.jpeg" alt="Canada Flag"> <b>Canada</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="morocco.jpeg" alt="Morocco Flag"> <b>Morocco</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="croatia.jpeg" alt="Croatia Flag"> <b>Croatia</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="group-column">
+                    <!-- Table for Group G -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group G</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="brazil.jpeg" alt="Brazil Flag"> <b>Brazil</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="serbia.jpeg" alt="Serbia Flag"> <b>Serbia</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="switzerland.jpeg" alt="Switzerland Flag"> <b>Switzerland</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="cameroon.jpeg" alt="Cameroon Flag"> <b>Cameroon</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="group-column">
+                    <!-- Table for Group H -->
+                    <table class="group-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Group H</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="portugal.jpeg" alt="Portugal Flag"> <b>Portugal</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="ghana.jpeg" alt="Ghana Flag"> <b>Ghana</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="uruguay.jpeg" alt="Uruguay Flag"> <b>Uruguay</b></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="country-button"><img class="flag" src="Korea Republic.jpeg" alt="Korea Republic Flag"> <b>Korea Republic</b></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

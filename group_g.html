@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group G Matches - World Cup Fantasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Group G Matches</h2>
+    <ul>
+      <li>Brazil vs. Serbia</li>
+      <li>Switzerland vs. Cameroon</li>
+      <li>Cameroon vs. Serbia</li>
+      <li>Brazil vs. Switzerland</li>
+      <li>Serbia vs. Brazil</li>
+      <li>Switzerland vs. Cameroon</li>
+    </ul>
+    <p>Predict the scores for the matches above:</p>
+    <form action="submit_prediction.php" method="post">
+      <div class="match">
+        <p>Brazil vs. Serbia</p>
+        <input type="number" name="brazil_serbia_score" placeholder="Brazil Score">
+        <span>-</span>
+        <input type="number" name="serbia_brazil_score" placeholder="Serbia Score">
+      </div>
+      <div class="match">
+        <p>Switzerland vs. Cameroon</p>
+        <input type="number" name="switzerland_cameroon_score" placeholder="Switzerland Score">
+        <span>-</span>
+        <input type="number" name="cameroon_switzerland_score" placeholder="Cameroon Score">
+      </div>
+      <div class="match">
+        <p>Cameroon vs. Serbia</p>
+        <input type="number" name="cameroon_serbia_score" placeholder="Cameroon Score">
+        <span>-</span>
+        <input type="number" name="serbia_cameroon_score" placeholder="Serbia Score">
+      </div>
+      <div class="match">
+        <p>Brazil vs. Switzerland</p>
+        <input type="number" name="brazil_switzerland_score" placeholder="Brazil Score">
+        <span>-</span>
+        <input type="number" name="switzerland_brazil_score" placeholder="Switzerland Score">
+      </div>
+      <div class="match">
+        <p>Serbia vs. Brazil</p>
+        <input type="number" name="serbia_brazil_score" placeholder="Serbia Score">
+        <span>-</span>
+        <input type="number" name="brazil_serbia_score" placeholder="Brazil Score">
+      </div>
+      <div class="match">
+        <p>Switzerland vs. Cameroon</p>
+        <input type="number" name="switzerland_cameroon_score" placeholder="Switzerland Score">
+        <span>-</span>
+        <input type="number" name="cameroon_switzerland_score" placeholder="Cameroon Score">
+      </div>
+      <button type="submit">Submit Prediction</button>
+    </form>
+  </div>
+</body>
+</html>

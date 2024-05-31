@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group F Matches - World Cup Fantasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Group F Matches</h2>
+    <ul>
+      <li>Morocco vs. Croatia</li>
+      <li>Belgium vs. Canada</li>
+      <li>Croatia vs. Canada</li>
+      <li>Morocco vs. Belgium</li>
+      <li>Canada vs. Morocco</li>
+      <li>Belgium vs. Croatia</li>
+    </ul>
+    <p>Predict the scores for the matches above:</p>
+    <form action="submit_prediction.php" method="post">
+      <div class="match">
+        <p>Morocco vs. Croatia</p>
+        <input type="number" name="morocco_croatia_score" placeholder="Morocco Score">
+        <span>-</span>
+        <input type="number" name="croatia_morocco_score" placeholder="Croatia Score">
+      </div>
+      <div class="match">
+        <p>Belgium vs. Canada</p>
+        <input type="number" name="belgium_canada_score" placeholder="Belgium Score">
+        <span>-</span>
+        <input type="number" name="canada_belgium_score" placeholder="Canada Score">
+      </div>
+      <div class="match">
+        <p>Croatia vs. Canada</p>
+        <input type="number" name="croatia_canada_score" placeholder="Croatia Score">
+        <span>-</span>
+        <input type="number" name="canada_croatia_score" placeholder="Canada Score">
+      </div>
+      <div class="match">
+        <p>Morocco vs. Belgium</p>
+        <input type="number" name="morocco_belgium_score" placeholder="Morocco Score">
+        <span>-</span>
+        <input type="number" name="belgium_morocco_score" placeholder="Belgium Score">
+      </div>
+      <div class="match">
+        <p>Canada vs. Morocco</p>
+        <input type="number" name="canada_morocco_score" placeholder="Canada Score">
+        <span>-</span>
+        <input type="number" name="morocco_canada_score" placeholder="Morocco Score">
+      </div>
+      <div class="match">
+        <p>Belgium vs. Croatia</p>
+        <input type="number" name="belgium_croatia_score" placeholder="Belgium Score">
+        <span>-</span>
+        <input type="number" name="croatia_belgium_score" placeholder="Croatia Score">
+      </div>
+      <button type="submit">Submit Prediction</button>
+    </form>
+  </div>
+</body>
+</html>

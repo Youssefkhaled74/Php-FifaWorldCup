@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group C Matches - World Cup Fantasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="#">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h2>Group C Matches</h2>
+    <ul>
+      <li>Argentina vs. Saudi Arabia</li>
+      <li>Mexico vs. Poland</li>
+      <li>Poland vs. Saudi Arabia</li>
+      <li>Argentina vs. Mexico</li>
+      <li>Poland vs. Argentina</li>
+      <li>Saudi Arabia vs. Mexico</li>
+    </ul>
+    <p>Predict the scores for the matches above:</p>
+    <form action="submit_prediction.php" method="post">
+      <div class="match">
+        <p>Argentina vs. Saudi Arabia</p>
+        <input type="number" name="argentina_saudi_score" placeholder="Argentina Score">
+        <span>-</span>
+        <input type="number" name="saudi_argentina_score" placeholder="Saudi Arabia Score">
+      </div>
+      <div class="match">
+        <p>Mexico vs. Poland</p>
+        <input type="number" name="mexico_poland_score" placeholder="Mexico Score">
+        <span>-</span>
+        <input type="number" name="poland_mexico_score" placeholder="Poland Score">
+      </div>
+      <div class="match">
+        <p>Poland vs. Saudi Arabia</p>
+        <input type="number" name="poland_saudi_score" placeholder="Poland Score">
+        <span>-</span>
+        <input type="number" name="saudi_poland_score" placeholder="Saudi Arabia Score">
+      </div>
+      <div class="match">
+        <p>Argentina vs. Mexico</p>
+        <input type="number" name="argentina_mexico_score" placeholder="Argentina Score">
+        <span>-</span>
+        <input type="number" name="mexico_argentina_score" placeholder="Mexico Score">
+      </div>
+      <div class="match">
+        <p>Poland vs. Argentina</p>
+        <input type="number" name="poland_argentina_score" placeholder="Poland Score">
+        <span>-</span>
+        <input type="number" name="argentina_poland_score" placeholder="Argentina Score">
+      </div>
+      <div class="match">
+        <p>Saudi Arabia vs. Mexico</p>
+        <input type="number" name="saudi_mexico_score" placeholder="Saudi Arabia Score">
+        <span>-</span>
+        <input type="number" name="mexico_saudi_score" placeholder="Mexico Score">
+      </div>
+      <button type="submit">Submit Prediction</button>
+    </form>
+  </div>
+</body>
+</html>

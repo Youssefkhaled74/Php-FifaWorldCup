@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup Fantasy - Fans Prediction</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .quizzes-container {
+      margin-top: 50px; /* Adjust the margin-top value as needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>World Cup Fantasy</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fix.html">Fixtures</a></li>
+        <li><a href="gs.html">Group Stages</a></li>
+        <li><a href="simulator.html">Simulator</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container" id="group_selection">
+    <h2>Select Group to Predict</h2>
+    <div class="group-buttons">
+      <button onclick="redirectToGroup('a')">Group A</button>
+      <button onclick="redirectToGroup('b')">Group B</button>
+      <button onclick="redirectToGroup('c')">Group C</button>
+      <button onclick="redirectToGroup('d')">Group D</button>
+      <button onclick="redirectToGroup('e')">Group E</button>
+      <button onclick="redirectToGroup('f')">Group F</button>
+      <button onclick="redirectToGroup('g')">Group G</button>
+      <button onclick="redirectToGroup('h')">Group H</button>
+    </div>
+    <h2>Select Your Favorite Team</h2>
+    <div class="team-select">
+      <select id="favoriteTeamSelect" onchange="redirectToTeam(this.value)">
+        <option value="" disabled selected>Select your favorite team</option>
+        <option value="team_argentina">Argentina</option>
+        <option value="team_australia">Australia</option>
+        <option value="team_belgium">Belgium</option>
+        <option value="team_brazil">Brazil</option>
+        <option value="team_canada">Canada</option>
+        <option value="team_cameroon">Cameroon</option>
+        <option value="team_costarica">Costa Rica</option>
+        <option value="team_croatia">Croatia</option>
+        <option value="team_denmark">Denmark</option>
+        <option value="team_ecuador">Ecuador</option>
+        <option value="team_england">England</option>
+        <option value="team_france">France</option>
+        <option value="team_germany">Germany</option>
+        <option value="team_ghana">Ghana</option>
+        <option value="team_iran">Iran</option>
+        <option value="team_iraq">Iraq</option>
+        <option value="team_italy">Italy</option>
+        <option value="team_japan">Japan</option>
+        <option value="team_mexico">Mexico</option>
+        <option value="team_morocco">Morocco</option>
+        <option value="team_netherlands">Netherlands</option>
+        <option value="team_newzealand">New Zealand</option>
+        <option value="team_nigeria">Nigeria</option>
+        <option value="team_poland">Poland</option>
+        <option value="team_portugal">Portugal</option>
+        <option value="team_qatar">Qatar</option>
+        <option value="team_russia">Russia</option>
+        <option value="team_saudi">Saudi Arabia</option>
+        <option value="team_serbia">Serbia</option>
+        <option value="team_southkorea">South Korea</option>
+        <option value="team_spain">Spain</option>
+        <option value="team_sweden">Sweden</option>
+        <option value="team_switzerland">Switzerland</option>
+        <option value="team_tunisia">Tunisia</option>
+        <option value="team_uruguay">Uruguay</option>
+        <option value="team_usa">United States</option>
+        <option value="team_wales">Wales</option>
+      </select>
+    </div>
+    <div class="quizzes-container">
+      <a href="quizzes.html" class="fan-engagement-btn">Quizzes</a>
+    </div>
+
+  <script>
+    function redirectToGroup(group) {
+      window.location.href = "group_" + group + ".html";
+    }
+
+    function redirectToTeam(team) {
+      if (team) {
+        window.location.href = "team_" + team + ".html";
+      }
+    }
+
+    function redirectToQuizzes() {
+      window.location.href = "quizzes.html";
+    }
+  </script>
+</body>
+</html>
