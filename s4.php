@@ -52,7 +52,25 @@ Group D - Tunisia vs. Australia: Draw.<br>.
 Group D - France vs. Denmark: Draw.<br>.
 Group D - Australia vs. Denmark: Winner Denmark with 0.65 probability.<br>.
 Group D - Tunisia vs. France: Winner France with 0.63 probability.<br>.";
+setcookie ( "m_16_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_3" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_4" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_5" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_6" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_7" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_8" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
 
+
+setcookie ( "m_8_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_3" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_4" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+setcookie ( "m_4_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_4_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+setcookie ( "m_2_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
 
 
 

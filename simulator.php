@@ -893,7 +893,104 @@
                     <form action="fs.php" method="POST">
                         <button class="simulate-btn" name="submit" onclick="startSimulating('Starting simulation of Round of 16')">Start Simulating</button>
                     </form>
+                </tr>
+            </table>
+            <p class="prob2">
+                <?php
+                if (isset($probability_16_1)) {
+                    echo $probability_16_1;
+                }
+                if (isset($probability_16_2)) {
+                    echo $probability_16_2;
+                }
+                if (isset($probability_16_3)) {
+                    echo $probability_16_3;
+                }
+                if (isset($probability_16_4)) {
+                    echo $probability_16_4;
+                }
+                if (isset($probability_16_5)) {
+                    echo $probability_16_5;
+                }
+                if (isset($probability_16_6)) {
+                    echo $probability_16_6;
+                }
+                if (isset($probability_16_7)) {
+                    echo $probability_16_7;
+                }
+                if (isset($probability_16_8)) {
+                    echo $probability_16_8;
+                }
+                ?>
+            </p>
+            <table class="group-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Go to the Round 8 </th>
                     </tr>
+                </thead>
+                <tr>
+                    <form action="fs2.php" method="POST">
+                        <button class="simulate-btn" name="submit2" onclick="startSimulating('Starting simulation of Round of 16')">Start Simulating</button>
+                    </form>
+                </tr>
+                <p class="prob2">
+                <?php
+                if (isset($probability_8_1)) {
+                    echo $probability_8_1;
+                }
+                if (isset($probability_8_2)) {
+                    echo $probability_8_2;
+                }
+                if (isset($probability_8_3)) {
+                    echo $probability_8_3;
+                }
+                if (isset($probability_8_4)) {
+                    echo $probability_8_4;
+                }
+                ?>
+            </p>
+            </table>
+            <table class="group-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Go to the Round 4 </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <form action="fs3.php" method="POST">
+                        <button class="simulate-btn" name="submit3" onclick="startSimulating('Starting simulation of Round of 16')">Start Simulating</button>
+                    </form>
+                </tr>
+                <p class="prob2">
+                <?php
+                if (isset($probability_4_1)) {
+                    echo $probability_4_1;
+                }
+                if (isset($probability_4_2)) {
+                    echo $probability_4_2;
+                }
+                ?>
+            </p>
+            </table>
+            <table class="group-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Go to final</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <form action="fs4.php" method="POST">
+                        <button class="simulate-btn" name="submit4" onclick="startSimulating('Starting simulation of Round of 16')">Start Simulating</button>
+                    </form>
+                    <p class="prob2">
+                <?php
+                if (isset($probability_2_1)) {
+                    echo $probability_2_1;
+                }
+                ?>
+            </p>
+                </tr>
             </table>
         </div>
     </div>

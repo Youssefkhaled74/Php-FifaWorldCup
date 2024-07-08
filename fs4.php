@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['submit'])){
+    if(isset($_POST['submit4'])){
         $sort1 ="Sort the data by point";
         $sort2 ="Sort the data by point";
         $sort3 ="Sort the data by point";
@@ -107,33 +107,6 @@
     Group H - Ghana vs. Uruguay: Winner Uruguay with 0.69 probability.<br>.
     Group H - South Korea vs. Portugal: Winner Portugal with 0.63 probability.<br>.";
 
-    // $m_16_1="Netherlands vs. United States";
-    setcookie ( "m_16_1" , "Netherlands vs. United States" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_16_2" , "Argentina vs. Denmark" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_16_3" , "Spain vs. Croatia" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_16_4" , "Brazil vs. Uruguay" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_16_5" , "Ecuador vs. England" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_16_6" , "Poland vs. France" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_16_7" , "Germany vs. Belgium" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_16_8" , "Switzerland vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-
-
-    setcookie ( "m_8_1" , "Netherlands vs. Argentina" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_8_2" , "Spain vs. Brazil" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_8_3" , "England vs. France" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_8_4" , "Belgium vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-
-    setcookie ( "m_4_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_4_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    
-    setcookie ( "m_2_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-// $m_16_2="Argentina vs. Denmark";
-// $m_16_3="Spain vs. Croatia";
-// $m_16_4="Brazil vs. Uruguay";
-// $m_16_5="Ecuador vs. England";
-// $m_16_6="Poland vs. France";
-// $m_16_7="Germany vs. Belgium";
-// $m_16_8="Switzerland vs. Portugal";
 
         $probability_16_1 = "Netherlands vs. United States: Netherlands advances with prob 0.55.<br>";
         $probability_16_2 = "Argentina vs. Denmark: Argentina advances with prob 0.59.<br>";
@@ -143,13 +116,36 @@
         $probability_16_6 = "Poland vs. France: France advances with prob 0.60.<br>";
         $probability_16_7 = "Germany vs. Belgium: Belgium advances with prob 0.50.<br>";
         $probability_16_8 = "Switzerland vs. Portugal: Portugal advances with prob 0.52.<br>";
-        // $probability_8_1 = "Netherlands vs. Argentina: Netherlands advances with prob 0.52";
-        // $probability_8_2 = "Spain vs. Brazil: Brazil advances with prob 0.51";
-        // $probability_8_3 = "England vs. France: France advances with prob 0.51";
-        // $probability_8_4 = "Belgium vs. Portugal: Portugal advances with prob 0.52";
-        // $probability_4_1 = "Netherlands vs. Brazil: Brazil advances with prob 0.52";
-        // $probability_4_2 = "France vs. Portugal: Portugal advances with prob 0.52";
-        // $probability_2_1 = "Brazil vs. Portugal: Brazil advances with prob 0.52";
+
+
+        $probability_8_1 = "Netherlands vs. Argentina: Netherlands advances with prob 0.52.<br>";
+        $probability_8_2 = "Spain vs. Brazil: Brazil advances with prob 0.51.<br>";
+        $probability_8_3 = "England vs. France: France advances with prob 0.51.<br>";
+        $probability_8_4 = "Belgium vs. Portugal: Portugal advances with prob 0.52.<br>";
+        $probability_4_1 = "Netherlands vs. Brazil: Brazil advances with prob 0.52.<br>";
+        $probability_4_2 = "France vs. Portugal: Portugal advances with prob 0.52.<br>";
+        $probability_2_1 = "Brazil vs. Portugal: Brazil advances with prob 0.52.<br>";
+
+
+        setcookie ( "m_16_1" , "Netherlands vs. United States" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_16_2" , "Argentina vs. Denmark" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_16_3" , "Spain vs. Croatia" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_16_4" , "Brazil vs. Uruguay" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_16_5" , "Ecuador vs. England" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_16_6" , "Poland vs. France" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_16_7" , "Germany vs. Belgium" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_16_8" , "Switzerland vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+    
+    
+        setcookie ( "m_8_1" , "Netherlands vs. Argentina" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_8_2" , "Spain vs. Brazil" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_8_3" , "England vs. France" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_8_4" , "Belgium vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+    
+        setcookie ( "m_4_1" , "Netherlands vs. Brazil" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        setcookie ( "m_4_2" , "France vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+        
+        setcookie ( "m_2_1" , "Brazil vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
         // include("fix.php");   
         include("simulator.php");       
         // header("location:http://localhost/fifa%20world%20cup/fix.php");

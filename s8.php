@@ -107,6 +107,26 @@ Group H - Portugal vs. Uruguay: Draw.<br>.
 Group H - Ghana vs. Uruguay: Winner Uruguay with 0.69 probability.<br>.
 Group H - South Korea vs. Portugal: Winner Portugal with 0.63 probability.<br>.";
 
+setcookie ( "m_16_1" , "Netherlands vs. United States" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_2" , "Argentina vs. Denmark" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_3" , "Spain vs. Croatia" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_4" , "Brazil vs. Uruguay" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_5" , "Ecuador vs. England" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_6" , "Poland vs. France" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_7" , "Germany vs. Belgium" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_8" , "Switzerland vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+
+setcookie ( "m_8_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_3" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_4" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+setcookie ( "m_4_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_4_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+setcookie ( "m_2_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
 
     include("simulator.php");
 } else {

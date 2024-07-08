@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['submit'])){
+    if(isset($_POST['submit2'])){
         $sort1 ="Sort the data by point";
         $sort2 ="Sort the data by point";
         $sort3 ="Sort the data by point";
@@ -123,8 +123,8 @@
     setcookie ( "m_8_3" , "England vs. France" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
     setcookie ( "m_8_4" , "Belgium vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
 
-    setcookie ( "m_4_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
-    setcookie ( "m_4_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+    setcookie ( "m_4_1" , "Netherlands vs. Brazil" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+    setcookie ( "m_4_2" , "France vs. Portugal" , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
     
     setcookie ( "m_2_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
 // $m_16_2="Argentina vs. Denmark";
@@ -143,10 +143,10 @@
         $probability_16_6 = "Poland vs. France: France advances with prob 0.60.<br>";
         $probability_16_7 = "Germany vs. Belgium: Belgium advances with prob 0.50.<br>";
         $probability_16_8 = "Switzerland vs. Portugal: Portugal advances with prob 0.52.<br>";
-        // $probability_8_1 = "Netherlands vs. Argentina: Netherlands advances with prob 0.52";
-        // $probability_8_2 = "Spain vs. Brazil: Brazil advances with prob 0.51";
-        // $probability_8_3 = "England vs. France: France advances with prob 0.51";
-        // $probability_8_4 = "Belgium vs. Portugal: Portugal advances with prob 0.52";
+        $probability_8_1 = "Netherlands vs. Argentina: Netherlands advances with prob 0.52.<br>";
+        $probability_8_2 = "Spain vs. Brazil: Brazil advances with prob 0.51.<br>";
+        $probability_8_3 = "England vs. France: France advances with prob 0.51.<br>";
+        $probability_8_4 = "Belgium vs. Portugal: Portugal advances with prob 0.52.<br>";
         // $probability_4_1 = "Netherlands vs. Brazil: Brazil advances with prob 0.52";
         // $probability_4_2 = "France vs. Portugal: Portugal advances with prob 0.52";
         // $probability_2_1 = "Brazil vs. Portugal: Brazil advances with prob 0.52";

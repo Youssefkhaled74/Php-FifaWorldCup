@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +13,18 @@
         body {
             background: none;
         }
+
         .flag {
-            width: 30px; /* Adjust size as needed */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 5px; /* Adjust spacing */
+            width: 30px;
+            /* Adjust size as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-right: 5px;
+            /* Adjust spacing */
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1>World Cup Fantasy</h1>
@@ -26,7 +33,7 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="fix.html" class="active">Fixtures</a></li>
                 <li><a href="gs.html">Group Stages</a></li>
-                <li><a href="simulator.html">Simulator</a></li>
+                <li><a href="simulator.php">Simulator</a></li>
             </ul>
         </nav>
     </div>
@@ -37,13 +44,13 @@
                 <h2>Group A</h2>
                 <ul>
                     <li><img class="flag" src="Qatar.jpeg" alt=""> QAT vs. <img class="flag" src="Ecuador.jpeg" alt=""> ECU</li>
-                    
+
                     <li><img class="flag" src="Senegal.jpeg" alt=""> SEN vs. <img class="flag" src="Netherlands.jpeg" alt=""> NED</li>
-                    
+
                     <li><img class="flag" src="Netherlands.jpeg" alt=""> NED vs. <img class="flag" src="Ecuador.jpeg" alt=""> ECU</li>
-                    
+
                     <li><img class="flag" src="Senegal.jpeg" alt=""> SEN vs. <img class="flag" src="Qatar.jpeg" alt=""> QAT</li>
-                    
+
                     <li><img class="flag" src="Ecuador.jpeg" alt=""> ECU vs. <img class="flag" src="Senegal.jpeg" alt=""> SEN</li>
 
                     <li><img class="flag" src="Qatar.jpeg" alt=""> QAT vs. <img class="flag" src="Netherlands.jpeg" alt=""> NED</li>
@@ -131,47 +138,47 @@
             <h2>Round 16</h2>
             <ul class="two-columns">
                 <!-- Group A Winner vs Group B Runner-up -->
-                <li>    
-                <?php
-                    if(isset($probability_16_1)){
-                    echo $probability_16_1;
-                }?>
+                <li>
+                    <?php
+                    if (isset($_COOKIE['m_16_1'] )) {
+                        echo $_COOKIE['m_16_1'] ;
+                    } ?>
                 </li>
                 <!-- Group B Winner vs Group A Runner-up -->
                 <li><?php
-                    if(isset($probability_16_2)){
-                    echo $probability_16_2;
-                }?></li>
+                    if (isset($_COOKIE['m_16_2'])) {
+                        echo $_COOKIE['m_16_2'];
+                    } ?></li>
                 <!-- Group C Winner vs Group D Runner-up -->
                 <li><?php
-                    if(isset($probability_16_3)){
-                    echo $probability_16_3;
-                }?></li>
+                    if (isset($_COOKIE['m_16_3'])) {
+                        echo $_COOKIE['m_16_3'];
+                    } ?></li>
                 <!-- Group D Winner vs Group C Runner-up -->
                 <li><?php
-                    if(isset($probability_16_4)){
-                    echo $probability_16_4;
-                }?></li>
+                    if (isset($_COOKIE['m_16_4'])) {
+                        echo $_COOKIE['m_16_4'];
+                    } ?></li>
                 <!-- Group E Winner vs Group F Runner-up -->
                 <li><?php
-                    if(isset($probability_16_5)){
-                    echo $probability_16_5;
-                }?></li>
+                    if (isset($_COOKIE['m_16_5'])) {
+                        echo $_COOKIE['m_16_5'];
+                    } ?></li>
                 <!-- Group F Winner vs Group E Runner-up -->
                 <li><?php
-                    if(isset($probability_16_6)){
-                    echo $probability_16_6;
-                }?></li>
+                    if (isset($_COOKIE['m_16_6'])) {
+                        echo $_COOKIE['m_16_6'];
+                    } ?></li>
                 <!-- Group G Winner vs Group H Runner-up -->
-                <li><?php
-                    if(isset($probability_16_7)){
-                    echo $probability_16_7;
-                }?></li>
                 <!-- Group H Winner vs Group G Runner-up -->
                 <li><?php
-                    if(isset($probability_16_8)){
-                    echo $probability_16_8;
-                }?></li>
+                    if (isset($_COOKIE['m_16_7'])) {
+                        echo $_COOKIE['m_16_7'];
+                    } ?></li>
+                <li><?php
+                    if (isset($_COOKIE['m_16_8'])) {
+                        echo $_COOKIE['m_16_8'];
+                    } ?></li>
             </ul>
         </div>
         <div class="group">
@@ -179,24 +186,24 @@
             <ul class="two-columns">
                 <!-- Match 1: Winner of Match 1 in Round 16 vs Winner of Match 2 in Round 16 -->
                 <li><?php
-                    if(isset($probability_8_1)){
-                    echo $probability_8_1;
-                }?></li>
+                    if (isset($_COOKIE['m_8_1'])) {
+                        echo $_COOKIE['m_8_1'];
+                    } ?></li>
                 <!-- Match 2: Winner of Match 3 in Round 16 vs Winner of Match 4 in Round 16 -->
                 <li><?php
-                    if(isset($probability_8_2)){
-                    echo $probability_8_2;
-                }?></li>
+                    if (isset($_COOKIE['m_8_2'])) {
+                        echo $_COOKIE['m_8_2'];
+                    } ?></li>
                 <!-- Match 3: Winner of Match 5 in Round 16 vs Winner of Match 6 in Round 16 -->
                 <li><?php
-                    if(isset($probability_8_3)){
-                    echo $probability_8_3;
-                }?></li>
+                    if (isset($_COOKIE['m_8_3'])) {
+                        echo $_COOKIE['m_8_3'];
+                    } ?></li>
                 <!-- Match 4: Winner of Match 7 in Round 16 vs Winner of Match 8 in Round 16 -->
                 <li><?php
-                    if(isset($probability_8_4)){
-                    echo $probability_8_4;
-                }?></li>
+                    if (isset($_COOKIE['m_8_3'])) {
+                        echo $_COOKIE['m_8_3'];
+                    } ?></li>
             </ul>
         </div>
         <div class="group">
@@ -204,27 +211,28 @@
             <ul class="two-columns">
                 <!-- Match 1: Winner of Match 1 in Quarterfinals vs Winner of Match 2 in Quarterfinals -->
                 <li><?php
-                    if(isset($probability_4_1)){
-                    echo $probability_4_1;
-                }?></li>
+                    if (isset($_COOKIE['m_4_1'])) {
+                        echo $_COOKIE['m_4_1'];
+                    } ?></li>
                 <!-- Match 2: Winner of Match 3 in Quarterfinals vs Winner of Match 4 in Quarterfinals -->
                 <li><?php
-                    if(isset($probability_4_2)){
-                    echo $probability_4_2;
-                }?></li>
+                    if (isset($_COOKIE['m_4_2'])) {
+                        echo $_COOKIE['m_4_2'];
+                    } ?></li>
             </ul>
         </div>
         <div class="group" style="text-align: center;">
             <h2>Final</h2>
-            <ul  style="display: inline-block; text-align: center;">
+            <ul style="display: inline-block; text-align: center;">
                 <!-- Final Match: Winner of Semifinal 1 vs Winner of Semifinal 2 -->
                 <li><?php
-                    if(isset($probability_2_1)){
-                    echo $probability_2_1;
-                }?></li>
+                    if (isset($_COOKIE['m_2_1'])) {
+                        echo $_COOKIE['m_2_1'];
+                    } ?></li>
             </ul>
         </div>
-                                
+
     </div>
 </body>
+
 </html>

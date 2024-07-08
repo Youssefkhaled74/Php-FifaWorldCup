@@ -96,6 +96,25 @@ Group G - Brazil vs. Switzerland: Draw.<br>.
 Group G - Serbia vs. Switzerland: Winner Switzerland with 0.56 probability.<br>.
 Group G - Cameroon vs. Brazil: Winner Brazil with 0.71 probability.<br>.";
 
+setcookie ( "m_16_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_3" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_4" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_5" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_6" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_7" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_16_8" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+
+setcookie ( "m_8_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_3" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_8_4" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+setcookie ( "m_4_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+setcookie ( "m_4_2" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
+
+setcookie ( "m_2_1" , Null , time() + (86400 * 30) ,  "/" ); // 86400 = 1 day
 
     include("simulator.php");
 } else {
